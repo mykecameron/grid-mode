@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Grid Mode",
+  "description": "This extension highlights borders helping you visualize the layout of a web page",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["grid.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["grid.css"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "http://*/",
+    "https://*/"
+  ]
+}
