@@ -17,7 +17,8 @@
     {
       "matches": [
         "*://*.dev/*",
-        "*://*.icisapp.com/*"
+        "*://*.icisapp.com/*",
+        "*://localhost:*/*"
       ],
       "css": ["grid.css"],
       "js": ["apply-grid.js"],
@@ -29,6 +30,7 @@
     "tabs",
     "activeTab",
     "storage",
+    "*://localhost:*/*",
     "*://*.dev/*",
     "*://*.icisapp.com/*"
   ]
